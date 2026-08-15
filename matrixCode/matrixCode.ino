@@ -11,6 +11,9 @@ char keys[ROWS][COLS] = {
   {'*','0','#','D'}
 };
 
+// Track key states to prevent spamming when held down
+bool keyState[ROWS][COLS] = {false}; 
+
 void setup() {
   Serial.begin(9600);
 
@@ -29,9 +32,16 @@ void loop() {
     digitalWrite(rowPins[r], LOW);
 
     for (byte c = 0; c < COLS; c++) {
-      if (digitalRead(colPins[c]) == LOW) {
-        Serial.println(keys[r][c]);
-        delay(200);
+      bool isPressed = (digitalRead(colPins[c]) == LOW);
+
+      // Trigger action only when first pressed down
+      if (isPressed && !keyState[r][c]) {
+        Serial.println(keys[r][c]); // Send key character to Python
+        keyState[r][c] = true;
+        delay(20); // Basic debounce
+      } 
+      else if (!isPressed && keyState[r][c]) {
+        keyState[r][c] = false; // Reset state when released
       }
     }
 
