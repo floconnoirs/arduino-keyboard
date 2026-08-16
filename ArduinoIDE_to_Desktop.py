@@ -3,7 +3,7 @@ import time
 import pyautogui
 
 # Set to your Arduino port (e.g., 'COM3' on Windows or '/dev/cu.usbmodem14101' on Mac)
-SERIAL_PORT = 'COM3' 
+SERIAL_PORT = 'COM4' 
 BAUD_RATE = 9600
 
 # Map keypad characters to PyAutoGUI key names or macros
