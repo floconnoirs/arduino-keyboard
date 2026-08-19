@@ -10,8 +10,25 @@ the matching keystroke (numbers, arrows, backspace, enter).
 ## How it works
 
 ```
-[4x4 keypad] --> [Arduino Uno]  --Serial (9600 baud)-->  [PC running Python]  --> keystroke
-   matrix           scans rows/cols                        maps char to key         sent to OS
+ 1. Button pressed
+       4x4 keypad
+
+           │  wired to
+           ▼
+
+ 2. Matrix scanned, key char sent over Serial (9600 baud)
+       Arduino Uno  →  matrixCode.ino
+
+           │  USB / Serial
+           ▼
+
+ 3. Char received, mapped to a key, sent via PyAutoGUI
+       PC running Python  →  ArduinoIDE_to_Desktop.py
+
+           │
+           ▼
+
+ 4. Keystroke lands on the OS
 ```
 
 1. **`firmware/matrixCode/matrixCode.ino`** scans the keypad by driving each
