@@ -5,7 +5,11 @@ keyboard. The Arduino scans the keypad and sends the pressed key over
 Serial; a Python script on the desktop reads that Serial stream and fires
 the matching keystroke (numbers, arrows, backspace, enter).
 
-![Keyboard Matrix Layout](hardware/wiring/matrixMap.svg)
+<!-- TODO: photo of the finished, physical build -->
+<!-- ![Finished build](docs/photo.jpg) -->
+
+<!-- TODO: video walkthrough -->
+<!-- [![Video walkthrough](docs/video-thumbnail.jpg)](https://youtu.be/your-video-id) -->
 
 ## How it works
 
@@ -61,6 +65,8 @@ arduino-keyboard/
 - Arduino Uno
 - 4x4 matrix keypad (16 buttons)
 - 8 jumper wires (4 rows + 4 columns)
+
+![Keyboard Matrix Layout](hardware/wiring/matrixMap.svg)
 
 ### Pin mapping
 
