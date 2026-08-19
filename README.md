@@ -1,9 +1,10 @@
 # arduino-keyboard
 
-A 4x4 matrix keypad wired to an Arduino Uno, turned into a mini macro
-keyboard. The Arduino scans the keypad and sends the pressed key over
-Serial; a Python script on the desktop reads that Serial stream and fires
-the matching keystroke (numbers, arrows, backspace, enter).
+A 4x4 matrix keypad built from 16 hand-wired Cherry MX switches, wired to an
+Arduino Uno and turned into a mini macro keyboard. The Arduino scans the
+switch matrix and sends the pressed key over Serial; a Python script on the
+desktop reads that Serial stream and fires the matching keystroke (numbers,
+arrows, backspace, enter).
 
 <!-- TODO: photo of the finished, physical build -->
 <!-- ![Finished build](docs/photo.jpg) -->
@@ -14,8 +15,8 @@ the matching keystroke (numbers, arrows, backspace, enter).
 ## How it works
 
 ```
- 1. Button pressed
-       4x4 keypad
+ 1. Switch pressed
+       16x Cherry MX switches (4x4 matrix)
 
            │  wired to
            ▼
@@ -63,8 +64,16 @@ arduino-keyboard/
 ## Hardware
 
 - Arduino Uno
-- 4x4 matrix keypad (16 buttons)
-- 8 jumper wires (4 rows + 4 columns)
+- 16x Cherry MX switches (any MX-style — Red/Brown/Blue all work electrically)
+- 16x 1N4148 diodes (one per switch, for anti-ghosting)
+- Solid-core hookup wire (22–24 AWG) for the row/column matrix — solid-core
+  holds its shape for a clean grid and is easier to solder point-to-point
+  than stranded jumper wire
+- Solder + soldering iron
+
+All switch-to-diode and row/column connections are hand-soldered directly —
+see `hardware/wiring/matrixMap.svg` for the layout and diode orientation
+(cathode/banded end toward the row line).
 
 ![Keyboard Matrix Layout](hardware/wiring/matrixMap.svg)
 
