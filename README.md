@@ -1,55 +1,123 @@
 # arduino-keyboard
 
-4x4 Keyboard Matrix build on an Arduino Uno, with a Python bridge script that
-turns keypad presses into keyboard shortcuts on your desktop.
+A 4x4 matrix keypad wired to an Arduino Uno, turned into a mini macro
+keyboard. The Arduino scans the keypad and sends the pressed key over
+Serial; a Python script on the desktop reads that Serial stream and fires
+the matching keystroke (numbers, arrows, backspace, enter).
 
 ![Keyboard Matrix Layout](hardware/wiring/matrixMap.svg)
+
+## How it works
+
+```
+[4x4 keypad] --> [Arduino Uno]  --Serial (9600 baud)-->  [PC running Python]  --> keystroke
+   matrix           scans rows/cols                        maps char to key         sent to OS
+```
+
+1. **`firmware/matrixCode/matrixCode.ino`** scans the keypad by driving each
+   row LOW one at a time and checking which columns read LOW. When a new
+   key press is detected, it prints that key's character to Serial.
+2. **`software/ArduinoIDE_to_Desktop.py`** listens on the Arduino's Serial
+   port, looks up the incoming character in a key map, and uses PyAutoGUI
+   to send the corresponding keystroke to the computer.
 
 ## Repo structure
 
 ```
 arduino-keyboard/
 ├── firmware/
-│   └── matrixCode/        # Arduino sketch (.ino) that scans the matrix and
-│                           # writes the pressed key over Serial — NEEDS RE-UPLOAD
+│   └── matrixCode/
+│       └── matrixCode.ino     # Arduino sketch: scans the matrix, sends keys over Serial
 ├── hardware/
-│   ├── printed-base/      # 3D-print files for the enclosure — NEEDS RE-UPLOAD
+│   ├── printed-base/          # 3D-print files for the enclosure
 │   └── wiring/
-│       └── matrixMap.svg  # matrix layout / wiring diagram
+│       └── matrixMap.svg      # matrix layout / wiring diagram
 ├── software/
-│   └── ArduinoIDE_to_Desktop.py  # reads Serial from the Arduino and maps
-│                                   # keypad presses to keystrokes via PyAutoGUI
+│   └── ArduinoIDE_to_Desktop.py  # Serial -> keystroke bridge (PyAutoGUI)
 ├── .gitattributes
 ├── .gitignore
 └── README.md
 ```
 
-## How it works
+## Hardware
 
-1. The Arduino Uno (running the sketch in `firmware/matrixCode/`) scans the
-   4x4 matrix keypad and prints the pressed character over Serial.
-2. `software/ArduinoIDE_to_Desktop.py` listens on that Serial port and maps
-   each key to a keyboard action (numbers, arrow keys, backspace, enter) via
-   PyAutoGUI.
+- Arduino Uno
+- 4x4 matrix keypad (16 buttons)
+- 8 jumper wires (4 rows + 4 columns)
+
+### Pin mapping
+
+| Keypad | Arduino pin | Mode |
+|---|---|---|
+| Row 1–4 | D5, D4, D3, D2 | `OUTPUT` |
+| Col 1–4 | D9, D10, D11, D12 | `INPUT_PULLUP` |
+
+### Key layout
+
+```
+1  2  3  A
+4  5  6  B
+7  8  9  C
+*  0  #  D
+```
+
+## Firmware — `matrixCode.ino`
+
+- Rows are driven `HIGH` by default and pulled `LOW` one at a time while
+  scanning; columns use internal pull-ups, so a column reads `LOW` when a
+  button bridges it to the active row.
+- A `keyState[][]` array tracks whether each key was already down, so a key
+  fires once on press rather than spamming while held.
+- A short `delay(20)` after a detected press acts as basic debounce.
+- On detecting a new press, the sketch does `Serial.println(key)` — that's
+  the one line of communication the Python script depends on.
+
+Flash this sketch to the Uno with the Arduino IDE before running the Python
+bridge.
+
+## Software — `ArduinoIDE_to_Desktop.py`
+
+Maps each keypad character to a PyAutoGUI key:
+
+| Keypad | Action | Keypad | Action |
+|---|---|---|---|
+| `1`–`9`, `0` | same digit | `A` | `up` |
+| `*` | `backspace` | `B` | `down` |
+| `#` | `enter` | `C` | `left` |
+| | | `D` | `right` |
 
 ## Setup
 
-1. Flash the Arduino with the sketch from `firmware/matrixCode/`.
-2. Close the Arduino IDE's Serial Monitor (it will lock the port).
-3. Install dependencies: `pip install pyserial pyautogui`
-4. Edit `SERIAL_PORT` in `software/ArduinoIDE_to_Desktop.py` to match your
-   Arduino's port (e.g. `COM4` on Windows, `/dev/cu.usbmodemXXXX` on Mac).
-5. Run: `python software/ArduinoIDE_to_Desktop.py`
+1. **Flash the Arduino**
+   - Open `firmware/matrixCode/matrixCode.ino` in the Arduino IDE.
+   - Wire the keypad per the pin mapping above (or per `hardware/wiring/matrixMap.svg`).
+   - Select your board/port and upload.
+   - **Close the Serial Monitor** afterward — it locks the port and the
+     Python script won't be able to connect while it's open.
 
-## ⚠️ Missing content
+2. **Run the desktop bridge**
+   ```bash
+   pip install pyserial pyautogui
+   ```
+   - Open `software/ArduinoIDE_to_Desktop.py` and set `SERIAL_PORT` to match
+     your Arduino (e.g. `COM4` on Windows, `/dev/cu.usbmodemXXXX` on Mac).
+   - Run it:
+     ```bash
+     python software/ArduinoIDE_to_Desktop.py
+     ```
+   - Press keys on the keypad — you should see them logged in the terminal
+     and reflected as keystrokes on your machine.
 
-Three items from the original upload came through as empty (0-byte) files —
-this happens when folders are dragged in but only individual files transfer.
-Placeholders with notes were added at:
+## Hardware files
 
-- `firmware/matrixCode/PLACEHOLDER.md`
-- `hardware/printed-base/PLACEHOLDER.md`
-- `hardware/wiring/PLACEHOLDER.md`
+3D-print files for the keypad's printed base live in `hardware/printed-base/`.
 
-Re-add the real files from your local machine into those folders, then
-delete the placeholder notes.
+## Customizing
+
+- **Change what keys do:** edit `KEY_MAP` in `ArduinoIDE_to_Desktop.py` —
+  any PyAutoGUI-recognized key name works, so this can become a macro pad
+  (media keys, shortcuts, etc.) instead of a numeric keypad.
+- **Change the physical layout:** edit the `keys[][]` array in
+  `matrixCode.ino` to relabel buttons without touching wiring.
+- **Different pins:** update `rowPins[]` / `colPins[]` in the sketch to
+  match your wiring.
