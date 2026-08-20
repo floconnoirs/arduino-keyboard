@@ -1004,6 +1004,193 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Diode:1N4148"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "1N4148"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "100V 0.15A standard switching diode, DO-35"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "D"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "D*DO?35*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "1N4148_0_1"
+				(polyline
+					(pts
+						(xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "1N4148_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -1719,10 +1906,16 @@
 		(uuid "04278419-a6d0-4539-91c7-d1d525b9c918")
 	)
 	(junction
-		(at 114.3 118.11)
+		(at 114.3 97.79)
 		(diameter 0)
 		(color 194 0 0 1)
-		(uuid "2e306b32-138b-4712-bae9-5bfaac0c094f")
+		(uuid "1956a25d-ed2c-4954-9a47-ab291946d078")
+	)
+	(junction
+		(at 142.24 97.79)
+		(diameter 0)
+		(color 194 0 0 1)
+		(uuid "29ebc496-da30-4217-a6e9-fc2837cc706d")
 	)
 	(junction
 		(at 182.88 46.99)
@@ -1731,10 +1924,10 @@
 		(uuid "2f1c53f4-41b6-40e8-b438-04b2a8d48dad")
 	)
 	(junction
-		(at 142.24 118.11)
+		(at 167.64 119.38)
 		(diameter 0)
 		(color 194 0 0 1)
-		(uuid "320926c0-08b4-4149-9811-b3650d4499d4")
+		(uuid "3c838f1a-805e-46e6-8a04-fc34c81aee07")
 	)
 	(junction
 		(at 31.75 46.99)
@@ -1749,16 +1942,22 @@
 		(uuid "45c706b6-e730-4aaf-a220-9ceb3c3ad968")
 	)
 	(junction
-		(at 142.24 77.47)
-		(diameter 0)
-		(color 194 0 0 1)
-		(uuid "596f0209-d478-4910-a4e0-582316a2bab5")
-	)
-	(junction
 		(at 182.88 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "65c99ba4-3b60-4237-abbe-8b7409a4a143")
+	)
+	(junction
+		(at 167.64 54.61)
+		(diameter 0)
+		(color 194 0 0 1)
+		(uuid "718c9378-564f-41a5-b6bf-d24e0640a223")
+	)
+	(junction
+		(at 114.3 119.38)
+		(diameter 0)
+		(color 194 0 0 1)
+		(uuid "781c727a-4845-4deb-8f64-b7cc690e5490")
 	)
 	(junction
 		(at 182.88 69.85)
@@ -1779,10 +1978,10 @@
 		(uuid "7ea5827d-024d-4465-8c75-672e45e69b43")
 	)
 	(junction
-		(at 167.64 96.52)
+		(at 114.3 77.47)
 		(diameter 0)
 		(color 194 0 0 1)
-		(uuid "87d378a9-839f-4258-b95e-54b9bef654c0")
+		(uuid "8267cde6-ac85-4703-8022-1793415bcbfd")
 	)
 	(junction
 		(at 157.48 46.99)
@@ -1797,10 +1996,28 @@
 		(uuid "96bb6a88-df4b-4b3d-8183-f97fd7b9cc0a")
 	)
 	(junction
+		(at 167.64 97.79)
+		(diameter 0)
+		(color 194 0 0 1)
+		(uuid "979127dd-fd94-4964-b88f-247af052f808")
+	)
+	(junction
+		(at 142.24 54.61)
+		(diameter 0)
+		(color 194 0 0 1)
+		(uuid "989b23b1-99ef-4109-8998-ea7a909637b8")
+	)
+	(junction
 		(at 104.14 69.85)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9a73b4d5-aa1a-4627-bd12-5f3a27495ec5")
+	)
+	(junction
+		(at 142.24 119.38)
+		(diameter 0)
+		(color 194 0 0 1)
+		(uuid "aad409b2-5d02-4aa6-bccc-a5bce50c369b")
 	)
 	(junction
 		(at 132.08 69.85)
@@ -1809,28 +2026,10 @@
 		(uuid "ad49bd6b-8d8c-430c-b681-31ff10431038")
 	)
 	(junction
-		(at 142.24 54.61)
-		(diameter 0)
-		(color 194 0 0 1)
-		(uuid "c7155dac-2f3a-46a5-8be3-aa56ce9620ce")
-	)
-	(junction
-		(at 142.24 96.52)
-		(diameter 0)
-		(color 194 0 0 1)
-		(uuid "d2750ef9-e9b4-4419-af10-73a8b34b7149")
-	)
-	(junction
 		(at 167.64 77.47)
 		(diameter 0)
 		(color 194 0 0 1)
-		(uuid "d5681190-72e8-42eb-81e1-53017a72238b")
-	)
-	(junction
-		(at 114.3 77.47)
-		(diameter 0)
-		(color 194 0 0 1)
-		(uuid "d6c76339-8ef5-4755-9d95-36c66c7806fe")
+		(uuid "b9a4f3f2-a9bd-44e4-b63a-c75b0ccddd08")
 	)
 	(junction
 		(at 157.48 69.85)
@@ -1839,28 +2038,22 @@
 		(uuid "dc2db61e-773e-4e63-8549-51469f475933")
 	)
 	(junction
-		(at 167.64 118.11)
-		(diameter 0)
-		(color 194 0 0 1)
-		(uuid "e3a0b750-1b5c-4c90-9232-418c252539c0")
-	)
-	(junction
-		(at 167.64 54.61)
-		(diameter 0)
-		(color 194 0 0 1)
-		(uuid "ecdcd7ee-b9a3-4e2c-bd06-a755808c8eee")
-	)
-	(junction
-		(at 114.3 96.52)
-		(diameter 0)
-		(color 194 0 0 1)
-		(uuid "fa3ee5f2-751e-4eb1-bcfb-680d807fc034")
-	)
-	(junction
 		(at 114.3 54.61)
 		(diameter 0)
 		(color 194 0 0 1)
-		(uuid "ff294b37-64a5-4597-8bd2-8f0877e9bb6c")
+		(uuid "dd857477-4e3e-4de2-b877-825d0760eb1c")
+	)
+	(junction
+		(at 142.24 77.47)
+		(diameter 0)
+		(color 194 0 0 1)
+		(uuid "fa8e7251-a214-44cd-8438-c0e04c47a440")
+	)
+	(junction
+		(at 193.04 119.38)
+		(diameter 0)
+		(color 194 0 0 1)
+		(uuid "fa915b38-c89f-4481-92e7-f7efa40d07aa")
 	)
 	(no_connect
 		(at 34.29 31.75)
@@ -1885,17 +2078,6 @@
 			(type default)
 		)
 		(uuid "033e458a-835b-4f65-808e-0ec9fa869352")
-	)
-	(wire
-		(pts
-			(xy 114.3 77.47) (xy 114.3 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "03c6abb2-c91c-4e05-ab0f-d517c97ca4d2")
 	)
 	(wire
 		(pts
@@ -1950,17 +2132,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 111.76) (xy 193.04 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "18e56d5b-5999-4e3b-92ac-fa621b0afa18")
-	)
-	(wire
-		(pts
 			(xy 31.75 44.45) (xy 31.75 46.99)
 		)
 		(stroke
@@ -1978,17 +2149,6 @@
 			(type solid)
 		)
 		(uuid "20854542-d0b0-4be7-af02-0e5fceb34e01")
-	)
-	(wire
-		(pts
-			(xy 142.24 96.52) (xy 142.24 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "2b790c35-b0ae-44ec-b0e1-04554fd0163e")
 	)
 	(wire
 		(pts
@@ -2019,17 +2179,6 @@
 			(type default)
 		)
 		(uuid "30282196-fab5-4b94-86aa-8dcdea73da05")
-	)
-	(wire
-		(pts
-			(xy 167.64 69.85) (xy 167.64 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "32179dc6-bcdc-44ec-b1cc-11367a444d16")
 	)
 	(wire
 		(pts
@@ -2163,17 +2312,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 118.11) (xy 167.64 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "4e58215c-71e1-4965-b560-a1de97e8532e")
-	)
-	(wire
-		(pts
 			(xy 62.23 62.23) (xy 74.93 62.23)
 		)
 		(stroke
@@ -2181,17 +2319,6 @@
 			(type solid)
 		)
 		(uuid "4e60e1af-19bd-45a0-b418-b7030b594dde")
-	)
-	(wire
-		(pts
-			(xy 114.3 54.61) (xy 114.3 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "50848cc3-7a3b-47a2-b34e-1e29f4fc0ed9")
 	)
 	(wire
 		(pts
@@ -2205,7 +2332,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 96.52) (xy 114.3 96.52)
+			(xy 93.98 97.79) (xy 193.04 97.79)
 		)
 		(stroke
 			(width 0)
@@ -2216,7 +2343,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 96.52) (xy 93.98 69.85)
+			(xy 93.98 97.79) (xy 93.98 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2237,23 +2364,12 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 118.11) (xy 114.3 111.76)
+			(xy 90.17 119.38) (xy 193.04 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "64c15dac-0d15-4795-ac6e-24ff6e5e7c05")
-	)
-	(wire
-		(pts
-			(xy 114.3 118.11) (xy 90.17 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
+			(color 194 0 0 1)
 		)
 		(uuid "661a659c-7f7c-48d4-b255-351a937ab51e")
 	)
@@ -2270,17 +2386,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 96.52) (xy 142.24 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "6ccadf00-6035-49ec-af1f-f6d9505c7bf5")
-	)
-	(wire
-		(pts
 			(xy 157.48 46.99) (xy 157.48 69.85)
 		)
 		(stroke
@@ -2288,17 +2393,6 @@
 			(type default)
 		)
 		(uuid "6cdb79bb-1a99-4488-ab55-b3dbe902fe23")
-	)
-	(wire
-		(pts
-			(xy 142.24 118.11) (xy 114.3 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "6d0f3cb7-e9d2-4088-bad4-00e97845ed30")
 	)
 	(wire
 		(pts
@@ -2332,7 +2426,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 54.61) (xy 142.24 54.61)
+			(xy 114.3 54.61) (xy 193.04 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2383,7 +2477,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 54.61) (xy 93.98 54.61)
+			(xy 93.98 54.61) (xy 114.3 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2401,17 +2495,6 @@
 			(type solid)
 		)
 		(uuid "97df9ac9-dbb8-472e-b84f-3684d0eb5efc")
-	)
-	(wire
-		(pts
-			(xy 193.04 90.17) (xy 193.04 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "97e0a87b-b64b-4005-a775-6ff09093bfa1")
 	)
 	(wire
 		(pts
@@ -2436,28 +2519,6 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 54.61) (xy 167.64 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "a776ad36-051f-4ade-85e1-cc68a363f402")
-	)
-	(wire
-		(pts
-			(xy 142.24 54.61) (xy 114.3 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "a7c43f32-0dfd-4355-a29b-4607e11e2281")
-	)
-	(wire
-		(pts
 			(xy 157.48 31.75) (xy 157.48 46.99)
 		)
 		(stroke
@@ -2478,50 +2539,6 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 77.47) (xy 97.79 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "abf101c0-0c55-4cbb-909e-47ae90fc7d24")
-	)
-	(wire
-		(pts
-			(xy 114.3 96.52) (xy 93.98 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "ba576a81-bc0e-41f1-bbed-448dcd826d14")
-	)
-	(wire
-		(pts
-			(xy 193.04 118.11) (xy 167.64 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "bb529498-47cf-46f7-967a-b824575de94b")
-	)
-	(wire
-		(pts
-			(xy 142.24 118.11) (xy 142.24 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "bbd35435-658d-406d-80f7-b4ba93c30cb1")
-	)
-	(wire
-		(pts
 			(xy 62.23 34.29) (xy 64.77 34.29)
 		)
 		(stroke
@@ -2529,17 +2546,6 @@
 			(type solid)
 		)
 		(uuid "bcbc7302-8a54-4b9b-98b9-f277f1b20941")
-	)
-	(wire
-		(pts
-			(xy 167.64 118.11) (xy 142.24 118.11)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 255 0 0 1)
-		)
-		(uuid "c0d68e86-478f-4553-a7ae-9a5db3e33842")
 	)
 	(wire
 		(pts
@@ -2553,12 +2559,12 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 118.11) (xy 90.17 72.39)
+			(xy 90.17 119.38) (xy 90.17 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
-			(color 255 0 0 1)
+			(color 194 0 0 1)
 		)
 		(uuid "c5595d47-4e9b-4f5d-a7c4-1bf46bdf10f0")
 	)
@@ -2574,17 +2580,6 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 96.52) (xy 114.3 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "c7be85e9-cf84-4277-ad83-7feae1865981")
-	)
-	(wire
-		(pts
 			(xy 104.14 90.17) (xy 104.14 111.76)
 		)
 		(stroke
@@ -2595,7 +2590,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 77.47) (xy 142.24 77.47)
+			(xy 97.79 77.47) (xy 193.04 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2627,50 +2622,6 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 54.61) (xy 167.64 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "d0392596-8718-4794-ac19-7fc6558ba58a")
-	)
-	(wire
-		(pts
-			(xy 142.24 77.47) (xy 142.24 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "d17b3efb-4ec8-4d72-8f80-34f5c900a0bc")
-	)
-	(wire
-		(pts
-			(xy 193.04 77.47) (xy 167.64 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "d2147bf2-3dc1-4229-a9d0-1e9cc2785cad")
-	)
-	(wire
-		(pts
-			(xy 142.24 77.47) (xy 114.3 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "d252e4a2-46e6-49b2-8fa3-b430907d1a04")
-	)
-	(wire
-		(pts
 			(xy 21.59 67.31) (xy 34.29 67.31)
 		)
 		(stroke
@@ -2688,17 +2639,6 @@
 			(type default)
 		)
 		(uuid "daaa8c21-19db-49d7-9fc8-55047eb9da33")
-	)
-	(wire
-		(pts
-			(xy 167.64 96.52) (xy 167.64 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "df8cf9a2-bc8f-4172-a0b0-11b1c28ca94d")
 	)
 	(wire
 		(pts
@@ -2727,7 +2667,7 @@
 		(stroke
 			(width 0)
 			(type solid)
-			(color 255 0 0 1)
+			(color 194 0 0 1)
 		)
 		(uuid "e9bdd59b-3252-4c44-a357-6fa1af0c210c")
 	)
@@ -2741,28 +2681,6 @@
 			(color 194 0 0 1)
 		)
 		(uuid "ec76dcc9-9949-4dda-bd76-046204829cb4")
-	)
-	(wire
-		(pts
-			(xy 142.24 54.61) (xy 142.24 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "edd757b3-9a9b-47ce-ae9c-2a0fbae77f16")
-	)
-	(wire
-		(pts
-			(xy 193.04 96.52) (xy 167.64 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "eef64f4a-3ef1-4ecb-9d79-6068a5e5a56f")
 	)
 	(wire
 		(pts
@@ -2783,17 +2701,6 @@
 			(type default)
 		)
 		(uuid "f3a2447b-d575-4649-957e-6ef8f5324665")
-	)
-	(wire
-		(pts
-			(xy 193.04 46.99) (xy 193.04 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "f71ddc8f-e245-4ff6-bcb8-b1f54320eec0")
 	)
 	(wire
 		(pts
@@ -2824,17 +2731,6 @@
 			(type solid)
 		)
 		(uuid "fc39c32d-65b8-4d16-9db5-de89c54a1206")
-	)
-	(wire
-		(pts
-			(xy 193.04 69.85) (xy 193.04 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-			(color 194 0 0 1)
-		)
-		(uuid "fd32006d-1f3a-406a-b0e8-9413b9f1ba33")
 	)
 	(wire
 		(pts
@@ -3876,6 +3772,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148")
+		(at 142.24 50.8 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "03c2ae81-c89a-4cae-aa66-4c0b53250562")
+		(property "Reference" "D2"
+			(at 144.78 49.5299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 144.78 52.0699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 142.24 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 142.24 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 142.24 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 142.24 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 142.24 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e3a31df2-d818-445c-bddb-f055fbcaf10a")
+		)
+		(pin "1"
+			(uuid "782ad0c2-5df6-41cd-994f-27177a17de7a")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 109.22 69.85 0)
 		(unit 1)
@@ -3950,6 +3949,418 @@
 			(project "wireMap"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 193.04 50.8 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "145a7cc0-1b89-4507-b6a5-de75c17c26fd")
+		(property "Reference" "D4"
+			(at 195.58 49.5299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 195.58 52.0699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 193.04 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 193.04 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 193.04 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 193.04 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 193.04 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "02e277f6-33fd-48de-b768-e429a29e2c5e")
+		)
+		(pin "1"
+			(uuid "b516f8c4-e773-460a-a1ce-25b1e41d6646")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 193.04 93.98 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2784a7a1-4e3b-4a77-b824-90021b65eaa2")
+		(property "Reference" "D12"
+			(at 195.58 92.7099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 195.58 95.2499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 193.04 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 193.04 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 193.04 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 193.04 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 193.04 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6d4b0212-8c34-4b47-9a60-214bd9e9264e")
+		)
+		(pin "1"
+			(uuid "4937c940-e3d0-444d-844a-991215874464")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 193.04 73.66 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3205cbdb-16fb-4c4d-a489-6a7d41fc81b3")
+		(property "Reference" "D8"
+			(at 195.58 72.3899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 195.58 74.9299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 193.04 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 193.04 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 193.04 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 193.04 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 193.04 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "409aeb24-4fe9-485f-b6c9-0225412dda26")
+		)
+		(pin "1"
+			(uuid "2cc5d597-881d-4702-bc99-8f7dcd4bfb63")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 167.64 73.66 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "39f17149-3b5b-4613-9206-9e3043c68e48")
+		(property "Reference" "D7"
+			(at 170.18 72.3899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 170.18 74.9299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 167.64 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 167.64 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 167.64 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 167.64 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 167.64 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "51c8c7bb-34d9-42d7-bac0-1586104cc005")
+		)
+		(pin "1"
+			(uuid "c9126f7e-bf44-47e0-8ba0-7065fa43a5f7")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D7")
 					(unit 1)
 				)
 			)
@@ -4190,6 +4601,109 @@
 			(project "wireMap"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "SW6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 142.24 73.66 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4df6fd66-d079-40c7-bf86-6446493ca808")
+		(property "Reference" "D6"
+			(at 144.78 72.3899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 144.78 74.9299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 142.24 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 142.24 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 142.24 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 142.24 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 142.24 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "777c6762-c7db-4616-9ef9-bb26bbc51837")
+		)
+		(pin "1"
+			(uuid "b6e71e23-efc3-4099-bcff-6fd49ad3b8e8")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -4594,6 +5108,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148")
+		(at 142.24 93.98 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7cb06710-2118-4228-a148-ca62ee83736f")
+		(property "Reference" "D10"
+			(at 144.78 92.7099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 144.78 95.2499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 142.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 142.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 142.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 142.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 142.24 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "5f1be723-64d7-400d-8d2b-78eb19d326b0")
+		)
+		(pin "1"
+			(uuid "50e98930-8b93-49ec-8bcf-3e4af4ee9341")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 109.22 46.99 0)
 		(unit 1)
@@ -4668,6 +5285,109 @@
 			(project "wireMap"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 167.64 93.98 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8ac1c65d-f033-4669-949a-df2202ab7e5f")
+		(property "Reference" "D11"
+			(at 170.18 92.7099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 170.18 95.2499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 167.64 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 167.64 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 167.64 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 167.64 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 167.64 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "739d6fd2-3835-46fa-b133-d22fd9d395c2")
+		)
+		(pin "1"
+			(uuid "7bd20f47-8633-4455-b7ae-c3f6c1f7e667")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D11")
 					(unit 1)
 				)
 			)
@@ -4828,6 +5548,212 @@
 			(project "wireMap"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "SW7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 114.3 93.98 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ac202683-ce9a-41b1-8049-66e9e9b2981d")
+		(property "Reference" "D9"
+			(at 116.84 92.7099 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 116.84 95.2499 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 114.3 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 114.3 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 114.3 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 114.3 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 114.3 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "1e2f9547-6649-4fc0-9a3d-af192d0b1376")
+		)
+		(pin "1"
+			(uuid "7d317e0b-28a2-49e4-b325-47ec072c38fb")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 114.3 115.57 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ac92548c-4b5e-4f11-bc46-c04b0aeb233e")
+		(property "Reference" "D13"
+			(at 116.84 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 116.84 116.8399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 114.3 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 114.3 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 114.3 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 114.3 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 114.3 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6e039cec-66fb-4857-be5a-79994a691e2e")
+		)
+		(pin "1"
+			(uuid "4bb03c44-0639-4ef4-b81f-9ea61b14749e")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -5074,6 +6000,109 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148")
+		(at 142.24 115.57 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bc5fa28b-a5a8-4e9d-a8c5-caeb0a483c29")
+		(property "Reference" "D14"
+			(at 144.78 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 144.78 116.8399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 142.24 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 142.24 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 142.24 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 142.24 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 142.24 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "21a6d48c-4eae-49e7-957f-db087c696879")
+		)
+		(pin "1"
+			(uuid "f3b77015-013a-4693-af20-2122ab104bbe")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 137.16 46.99 0)
 		(unit 1)
@@ -5154,6 +6183,212 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N4148")
+		(at 167.64 115.57 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c44a660b-f0fe-422e-ad9e-6059aa2a196d")
+		(property "Reference" "D15"
+			(at 170.18 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 170.18 116.8399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 167.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 167.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 167.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 167.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 167.64 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e637c2ff-d052-4cad-bd28-0d35e2f82b4a")
+		)
+		(pin "1"
+			(uuid "210a5010-69b6-46fb-9285-caa156d82d8b")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 167.64 50.8 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cc993e85-7f1a-4f5d-ba14-26fd368a5169")
+		(property "Reference" "D3"
+			(at 170.18 49.5299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 170.18 52.0699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 167.64 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 167.64 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 167.64 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 167.64 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 167.64 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "4d370e80-4b06-4cb9-985f-1e90362de1d8")
+		)
+		(pin "1"
+			(uuid "ae6cd290-202d-4d14-8f67-1d37c7e1d9f6")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 137.16 111.76 0)
 		(unit 1)
@@ -5228,6 +6463,315 @@
 			(project "wireMap"
 				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
 					(reference "SW8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 114.3 50.8 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e242b9f6-94b5-4ad8-9047-1faf0693a1e6")
+		(property "Reference" "D1"
+			(at 116.84 49.5299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 116.84 52.0699 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 114.3 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 114.3 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 114.3 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 114.3 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 114.3 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b00f2e0b-ae5f-42e2-b1f4-1399445c91a7")
+		)
+		(pin "1"
+			(uuid "e808282b-04b7-4447-845c-48a21356715d")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 114.3 73.66 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ec61d7a2-8f32-4794-a183-b0ea24020731")
+		(property "Reference" "D5"
+			(at 116.84 72.3899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 116.84 74.9299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 114.3 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 114.3 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 114.3 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 114.3 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 114.3 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "16bbd410-da8c-464b-97a1-06116eb39458")
+		)
+		(pin "1"
+			(uuid "4e032354-9869-4ca7-96b2-936cb7f1c545")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N4148")
+		(at 193.04 115.57 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eec08f66-be43-4c6f-b347-46cf50a00f4f")
+		(property "Reference" "D16"
+			(at 195.58 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1N4148"
+			(at 195.58 116.8399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(at 193.04 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf"
+			(at 193.04 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "100V 0.15A standard switching diode, DO-35"
+			(at 193.04 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 193.04 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 193.04 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "cb3654af-035b-4ecf-98e1-6ab0c6c93730")
+		)
+		(pin "1"
+			(uuid "2ec1c7d6-f4e8-462e-9ca0-37171451fdf3")
+		)
+		(instances
+			(project "wireMap"
+				(path "/e63e39d7-6ac0-4ffd-8aa3-1841a4541b55"
+					(reference "D16")
 					(unit 1)
 				)
 			)
