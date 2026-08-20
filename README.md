@@ -75,7 +75,7 @@ All switch-to-diode and row/column connections are hand-soldered directly —
 see `hardware/wiring/matrixMap.svg` for the layout and diode orientation
 (cathode/banded end toward the row line).
 
-![Keyboard Matrix Layout](hardware/wiring/matrixMap.svg)
+![Keyboard Matrix Layout](hardware/wiring/wireMap.svg)
 
 ### Pin mapping
 
